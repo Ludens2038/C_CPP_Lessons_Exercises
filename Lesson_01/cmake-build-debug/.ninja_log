@@ -1,0 +1,5 @@
+# ninja log v6
+2	64	7638550097326442	CMakeFiles/Lesson_01.dir/main.c.obj	8dd15dc5b40e3601
+16	71	7638550299471901	CMakeFiles/Lesson_01.dir/greetings.c.obj	5d7fdb9ac4e06cb3
+35	297	7638557075747354	build.ninja	9e7ce43d1e2960d7
+71	122	7638550300013836	Lesson_01.exe	a0238ddae36596eb
