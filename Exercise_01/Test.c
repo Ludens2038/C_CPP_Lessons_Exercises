@@ -1,6 +1,8 @@
 #include <assert.h>
 #include <stdlib.h>
 
+#include "IntList.h"
+
 int main(void)
 {
     IntList* list = malloc(sizeof(IntList));
