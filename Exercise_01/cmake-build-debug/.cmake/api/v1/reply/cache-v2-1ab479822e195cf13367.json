@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "d:/SourceCode/C_CPP/Lesson_01/cmake-build-debug"
+			"value" : "c:/Users/Haris/Documents/Haris/FH/Sem_04/C_CPP_Lessons_Exercises/Exercise_01/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -431,7 +431,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "D:/SourceCode/C_CPP/Lesson_01/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "C:/Users/Haris/Documents/Haris/FH/Sem_04/C_CPP_Lessons_Exercises/Exercise_01/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -503,7 +503,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "D:/SourceCode/C_CPP/Lesson_01"
+			"value" : "C:/Users/Haris/Documents/Haris/FH/Sem_04/C_CPP_Lessons_Exercises/Exercise_01"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -515,7 +515,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "C:/Program Files (x86)/Lesson_01"
+			"value" : "C:/Program Files (x86)/Exercise_01"
 		},
 		{
 			"name" : "CMAKE_LINKER",
@@ -731,7 +731,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "Lesson_01"
+			"value" : "Exercise_01"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -1126,7 +1126,7 @@
 			"value" : "FALSE"
 		},
 		{
-			"name" : "Lesson_01_BINARY_DIR",
+			"name" : "Exercise_01_BINARY_DIR",
 			"properties" : 
 			[
 				{
@@ -1135,10 +1135,10 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "D:/SourceCode/C_CPP/Lesson_01/cmake-build-debug"
+			"value" : "C:/Users/Haris/Documents/Haris/FH/Sem_04/C_CPP_Lessons_Exercises/Exercise_01/cmake-build-debug"
 		},
 		{
-			"name" : "Lesson_01_IS_TOP_LEVEL",
+			"name" : "Exercise_01_IS_TOP_LEVEL",
 			"properties" : 
 			[
 				{
@@ -1150,7 +1150,7 @@
 			"value" : "ON"
 		},
 		{
-			"name" : "Lesson_01_SOURCE_DIR",
+			"name" : "Exercise_01_SOURCE_DIR",
 			"properties" : 
 			[
 				{
@@ -1159,7 +1159,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "D:/SourceCode/C_CPP/Lesson_01"
+			"value" : "C:/Users/Haris/Documents/Haris/FH/Sem_04/C_CPP_Lessons_Exercises/Exercise_01"
 		},
 		{
 			"name" : "_CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED",

@@ -1,4 +1,4 @@
-# Install script for directory: D:/SourceCode/C_CPP/Lesson_01
+# Install script for directory: C:/Users/Haris/Documents/Haris/FH/Sem_04/C_CPP_Lessons_Exercises/Lesson_01
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -52,6 +52,6 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-  file(WRITE "D:/SourceCode/C_CPP/Lesson_01/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "C:/Users/Haris/Documents/Haris/FH/Sem_04/C_CPP_Lessons_Exercises/Lesson_01/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()
