@@ -32,8 +32,6 @@ struct Person_ {
     char* name;
 };
 
-
-
 typedef struct Person_ Person; //somit muss man beim erstellen nicht mehr struct dazuschreiben. eine art alias
 
 void printPerson(Person* this) {
