@@ -13,7 +13,7 @@ int size(IntList* l)
     return INT_MAX;
 }
 
-void IntList_init(IntList* l) {
+void init(IntList* l) {
     if (l != NULL) {
         l->nOfElements = 0;
         l->head = NULL;
