@@ -25,14 +25,21 @@ int main(void)
     IntList* list = malloc(sizeof(IntList));
     init(list);
 
+    assert(size(list) == 0);
+
     push_back(list, 110);
     push_back(list, 12);
     push_front(list, 420);
     push_front(list, 69);
 
+    assert(size(list) == 4);
+
     printf("first element: %d\n", front(list));
     printf("last element: %d\n", back(list));
 
+    printList(list);
+
+    sort(list);
     printList(list);
 
     pop_front(list);
@@ -44,12 +51,11 @@ int main(void)
     printf("first element: %d\n", front(list));
     printf("last element: %d\n", back(list));
 
-    /*
-    assert(size(list) == 0);
+    assert(size(list) == 2);
     push_back(list, 100);
-    assert(size(list) == 1);
-    assert(back(list) == 110);
+    assert(size(list) == 3);
+    assert(back(list) == 100);
     clear(list);
     free(list);
-    */
+
 }

@@ -152,3 +152,26 @@ int back(IntList* l) {
         return l->tail->value;
     }
 }
+
+void sort (IntList* l) {
+    if (l == NULL || l->nOfElements == 0) {
+        return;
+    }
+
+    Node* i = l->head;
+    Node* j = NULL;
+    int temp;
+
+    while (i != NULL) {
+        j = i->next;
+        while (j != NULL) {
+            if (i->value > j->value) {
+                temp = i->value;
+                i->value = j->value;
+                j->value = temp;
+            }
+            j = j->next;
+        }
+        i = i->next;
+    }
+}
