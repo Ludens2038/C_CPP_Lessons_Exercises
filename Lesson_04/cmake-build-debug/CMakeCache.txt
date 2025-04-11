@@ -157,7 +157,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=Project
+CMAKE_PROJECT_NAME:STATIC=Lesson_03
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=C:/Program Files (x86)/JetBrains/CLion 2024.3.5/bin/mingw/bin/ranlib.exe
@@ -241,6 +241,15 @@ CMAKE_TAPI:FILEPATH=CMAKE_TAPI-NOTFOUND
 // during the make.  This is useful for debugging only. With Visual
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
+
+//Value Computed by CMake
+Lesson_03_BINARY_DIR:STATIC=D:/SourceCode/C_CPP/Lesson_04/cmake-build-debug
+
+//Value Computed by CMake
+Lesson_03_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+Lesson_03_SOURCE_DIR:STATIC=D:/SourceCode/C_CPP/Lesson_04
 
 //Value Computed by CMake
 Project_BINARY_DIR:STATIC=D:/SourceCode/C_CPP/Lesson_04/cmake-build-debug
