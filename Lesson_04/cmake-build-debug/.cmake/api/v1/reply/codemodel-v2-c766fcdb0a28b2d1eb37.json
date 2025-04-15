@@ -27,7 +27,7 @@
 					[
 						0
 					],
-					"name" : "Exercise_03",
+					"name" : "Lesson_03",
 					"targetIndexes" : 
 					[
 						0
@@ -38,9 +38,9 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "Exercise_03::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Exercise_03-Debug-0244f852f4d9befe4686.json",
-					"name" : "Exercise_03",
+					"id" : "Lesson_04::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Lesson_04-Debug-cf3c2c4801920d9463bb.json",
+					"name" : "Lesson_04",
 					"projectIndex" : 0
 				}
 			]
@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "D:/SourceCode/C_CPP/Exercise_03/cmake-build-debug",
-		"source" : "D:/SourceCode/C_CPP/Exercise_03"
+		"build" : "C:/Users/Haris/Documents/Haris/FH/Sem_04/C_CPP_Lessons_Exercises/Lesson_04/cmake-build-debug",
+		"source" : "C:/Users/Haris/Documents/Haris/FH/Sem_04/C_CPP_Lessons_Exercises/Lesson_04"
 	},
 	"version" : 
 	{
