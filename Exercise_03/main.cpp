@@ -32,4 +32,12 @@ int main() {
     list2.print();
     std::cout << std::endl;
 
+    MC::List<Person> list3 = list2;
+    list3.print();
+    std::cout << std::endl;
+
+    list3.push_back(Person{ "Felix Sams" });
+    list2 = list3;
+    list2.print();
+    std::cout << std::endl;
 }

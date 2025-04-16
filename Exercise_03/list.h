@@ -20,6 +20,7 @@ namespace MC {
          *warum machen wir 2 mal das gleiche??????????????????????????????
          */
         List(const List &rhs) {
+            std::cout << "Copy constructor called!" << std::endl;
             Node *current = rhs.head;
             while (current != nullptr) {
                 push_back(current->value);
@@ -28,6 +29,7 @@ namespace MC {
         }
 
         List &operator=(const List &rhs) {
+            std::cout << "Copy assignment operator called!" << std::endl;
             clear();
 
             Node *current = rhs.head;
