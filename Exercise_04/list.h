@@ -19,7 +19,7 @@ namespace MC {
 
         List(const List &rhs) {
             std::cout << "Copy constructor called!" << std::endl;
-            Node *current = rhs.head;
+            std::shared_ptr<Node> current = rhs.head;
             while (current != nullptr) {
                 push_back(current->value);
                 current = current->next;
@@ -30,7 +30,7 @@ namespace MC {
             std::cout << "Copy assignment operator called!" << std::endl;
             clear();
 
-            Node *current = rhs.head;
+            std::shared_ptr<Node> current = rhs.head;
             while (current != nullptr) {
                 push_back(current->value);
                 current = current->next;
@@ -40,7 +40,7 @@ namespace MC {
 
         int size() const {
             int count = 0;
-            Node *current = head;
+            std::shared_ptr<Node> current = head;
             while (current != nullptr) {
                 count++;
                 current = current->next;
@@ -59,21 +59,12 @@ namespace MC {
             if (head == nullptr) {
                 return;
             }
-
-            Node *current = head;
-            Node *temp;
-
-            while (current != nullptr) {
-                temp = current->next;
-                delete current;
-                current = temp;
-            }
             head = nullptr;
             tail = nullptr;
         }
 
         void push_back(const T &value) {
-            Node *n = new Node();
+            std::shared_ptr<Node> n = std::make_shared<Node>();
             n->value = value;
 
             if (head == nullptr) {
@@ -93,20 +84,17 @@ namespace MC {
             }
 
             if (head == tail) {
-                delete head;
                 head = nullptr;
                 tail = nullptr;
             }
             else {
-                Node *del = tail;
-                tail = tail->prev;
+                tail = tail->prev.lock();
                 tail->next = nullptr;
-                delete del;
             }
         }
 
         void push_front(const T &value) {
-            Node *n = new Node();
+            std::shared_ptr<Node> n = std::make_shared<Node>();
             n->value = value;
 
             if (head == nullptr) {
@@ -125,15 +113,12 @@ namespace MC {
                 throw std::logic_error("empty list");
             }
             if (head == tail) {
-                delete head;
                 head = nullptr;
                 tail = nullptr;
             }
             else {
-                Node *del = head;
                 head = head->next;
                 head->prev = nullptr;
-                delete del;
             }
         }
 
@@ -142,11 +127,11 @@ namespace MC {
                 return;
             }
 
-            Node *sorted = nullptr;
-            Node *current = head;
+            std::shared_ptr<Node> sorted = nullptr;
+            std::shared_ptr<Node> current = head;
 
             while (current != nullptr) {
-                Node *next = current->next;
+                std::shared_ptr<Node> next = current->next;
                 current->prev = current->next = nullptr;
 
                 if (sorted == nullptr || current->value < sorted->value) {
@@ -157,7 +142,7 @@ namespace MC {
                     sorted = current;
                 }
                 else {
-                    Node *temp = sorted;
+                    std::shared_ptr<Node> temp = sorted;
                     while (temp->next != nullptr && temp->next->value < current->value) {
                         temp = temp->next;
                     }
@@ -190,11 +175,11 @@ namespace MC {
             if (head == nullptr) {
                 throw std::logic_error("empty list");
             }
-            return head->value;
+            return tail->value;
         }
 
         void print() {
-            Node* current = head;
+            std::shared_ptr<Node> current = head;
             int count = 1;
 
             while (current != nullptr) {
@@ -207,7 +192,7 @@ namespace MC {
     private:
         struct Node {
             T value;
-            std::weak_ptr<Node> next;
+            std::shared_ptr<Node> next;
             std::weak_ptr<Node> prev;
         };
 

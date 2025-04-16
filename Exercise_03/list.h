@@ -195,7 +195,7 @@ namespace MC {
             if (head == nullptr) {
                 throw std::logic_error("empty list");
             }
-            return head->value;
+            return tail->value;
         }
 
         void print() {
