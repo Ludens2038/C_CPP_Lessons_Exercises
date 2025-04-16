@@ -29,7 +29,13 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8d217ca7-6aa6-42d7-a3d5-a12ad2d709ff" name="Changes" comment="" />
+    <list default="true" id="8d217ca7-6aa6-42d7-a3d5-a12ad2d709ff" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../Abgaben/Haris_Kekic_s2310237010_Ex_03.zip" beforeDir="false" afterPath="$PROJECT_DIR$/../Abgaben/Haris_Kekic_s2310237010_Ex_03.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercise_04/.idea/Exercise_04.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Exercise_04/.idea/Exercise_04.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercise_04/.idea/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Exercise_04/.idea/editor.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercise_04/main.cpp" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -104,7 +110,7 @@
       <workItem from="1744710504105" duration="1622000" />
       <workItem from="1744718645799" duration="105000" />
       <workItem from="1744718759444" duration="10236000" />
-      <workItem from="1744794584615" duration="1932000" />
+      <workItem from="1744794584615" duration="3728000" />
     </task>
     <servers />
   </component>
