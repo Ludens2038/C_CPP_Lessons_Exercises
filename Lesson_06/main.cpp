@@ -2,12 +2,58 @@
 #include "person.h"
 #include <cassert>
 #include <algorithm>
+#include <vector>
 
 void print() {
 
 }
 
+int compare_int(const int& l, const  int& r) {
+    return l - r;
+}
+
+template <typename T>
+void sort_0(std::vector<T> v, int (*cmp)(const T& l, const T& r)) {
+    if (v[0] > v[1]) {
+        v[0] = v[1];
+    }
+}
+
+template <typename T, typename F>
+void sort_1(std::vector<T> v, F cmp) {
+    if (v[0] > v[1]) {
+        v[0] = v[1];
+    }
+}
+
 int main() {
+
+    std::vector<int> list{3, 2};
+
+
+    int x = 0;
+    int y = 1;
+
+    // capture clause !(anschauen!)
+    auto l = [] (const int& l, const int& r) {
+        std::cout << "hello 1: " << std::endl;
+        return true;
+    };
+
+    l(x, y);
+    x = 1000; // wird nicht übernommen bei capture clause
+    y = 1000; // wird nicht übernommen bei capture clause
+    l(x, y);
+
+    sort_0(list, compare_int);
+    sort_1
+
+
+    [] { std::cout << "hello" << std::endl; }();
+
+    std::cout << "end of lesson 06" << std::endl;
+    std::cout << std::endl;
+
 
     MC::List<int> list1;
     // assert(list1.size() == 0);
@@ -57,7 +103,8 @@ int main() {
         std::cout << i << std::endl;
     }
 
-    auto result2 = std::find(list2.begin(), list2.end(), Person{"Jane Doe"});
-    std::cout << "result: " << *result2 << std::endl;
+    // auto result2 = std::find(list2.begin(), list2.end(), 'Jane');
+    // std::cout << "result: " << *result2 << std::endl;
+
 
 }
