@@ -1,23 +1,3 @@
 # ninja log v6
-3	375	7664295237639294	CMakeFiles/Exercise_03.dir/main.cpp.obj	af4e893fe7e1ffed
-377	493	7664295241388164	Exercise_03.exe	641b2acfdd6fe190
-7	581	7664332092587418	CMakeFiles/Exercise_03.dir/main.cpp.obj	af4e893fe7e1ffed
-581	682	7664332098330151	Exercise_03.exe	641b2acfdd6fe190
-13	516	7664988170316647	CMakeFiles/Exercise_03.dir/main.cpp.obj	af4e893fe7e1ffed
-517	690	7664988175350124	Exercise_03.exe	641b2acfdd6fe190
-5	428	7664988820812320	CMakeFiles/Exercise_03.dir/main.cpp.obj	af4e893fe7e1ffed
-428	492	7664988825045483	Exercise_03.exe	641b2acfdd6fe190
-5	409	7664990088137250	CMakeFiles/Exercise_03.dir/main.cpp.obj	af4e893fe7e1ffed
-409	473	7664990092178529	Exercise_03.exe	641b2acfdd6fe190
-5	455	7664990993034473	CMakeFiles/Exercise_03.dir/main.cpp.obj	af4e893fe7e1ffed
-455	527	7664990997537788	Exercise_03.exe	641b2acfdd6fe190
-5	416	7664991205716905	CMakeFiles/Exercise_03.dir/main.cpp.obj	af4e893fe7e1ffed
-417	481	7664991209833783	Exercise_03.exe	641b2acfdd6fe190
-6	413	7664991277204563	CMakeFiles/Exercise_03.dir/main.cpp.obj	af4e893fe7e1ffed
-413	479	7664991281275322	Exercise_03.exe	641b2acfdd6fe190
-5	416	7665028230904330	CMakeFiles/Exercise_03.dir/main.cpp.obj	af4e893fe7e1ffed
-416	481	7665028235013340	Exercise_03.exe	641b2acfdd6fe190
-5	453	7665028577126981	CMakeFiles/Exercise_03.dir/main.cpp.obj	af4e893fe7e1ffed
-454	523	7665028581614976	Exercise_03.exe	641b2acfdd6fe190
 5	449	7665029232008649	CMakeFiles/Exercise_03.dir/main.cpp.obj	af4e893fe7e1ffed
 450	516	7665029236447988	Exercise_03.exe	641b2acfdd6fe190

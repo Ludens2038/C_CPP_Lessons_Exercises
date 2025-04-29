@@ -1,0 +1,14 @@
+"C:\Program Files (x86)\JetBrains\CLion 2025.1\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Program Files (x86)/JetBrains/CLion 2025.1/bin/ninja/win/x64/ninja.exe" -G Ninja -S D:\SourceCode\C_CPP\FinalProject -B D:\SourceCode\C_CPP\FinalProject\cmake-build-debug
+You are using nana directly from original sources. (Recommended!) If this was not your intention, and what you want is to install precomplied nana first, then please tern ON option NANA_CMAKE_INSTALL 
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Looking for C++ include filesystem
+-- Looking for C++ include filesystem - found
+-- C++ Filesystem header:      <filesystem>
+-- Performing Test CXXBuiltIn_FS_BuiltIn
+-- Performing Test CXXBuiltIn_FS_BuiltIn - Success
+-- C++ Filesystem library:     builtin
+-- Configuring done (3.6s)
+-- Generating done (0.1s)
+-- Build files have been written to: D:/SourceCode/C_CPP/FinalProject/cmake-build-debug
