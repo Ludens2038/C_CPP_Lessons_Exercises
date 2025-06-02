@@ -1,5 +1,5 @@
 # CMakeLists.txt project file for Raylib projects
-# 
+#
 cmake_minimum_required(VERSION 3.31)
 project(snake42 CXX)
 
@@ -32,6 +32,10 @@ else()
 endif()
 
 add_executable(snake42 main.cpp
+        food.cpp
+        snake.cpp
+        game.cpp
+        utils.cpp
 )
 
 # set the include directory
@@ -39,3 +43,4 @@ target_include_directories(snake42 PRIVATE ${raylib_INCLUDE_DIRS})
 
 # link all libraries to the project
 target_link_libraries(snake42 PRIVATE ${LIB1})
+
