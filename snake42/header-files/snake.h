@@ -9,6 +9,7 @@ public:
     bool addSegment;
 
     Texture2D head;
+    Texture2D tail;
 
     Snake();
     ~Snake();

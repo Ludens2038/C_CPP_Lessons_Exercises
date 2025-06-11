@@ -12,10 +12,16 @@ Snake::Snake() {
     ImageResize(&headImg, 40, 40);
     head = LoadTextureFromImage(headImg);
     UnloadImage(headImg);
+
+    Image tailImg = LoadImage("./assets/pfirsich.png");
+    ImageResize(&tailImg, 35, 35);
+    tail = LoadTextureFromImage(tailImg);
+    UnloadImage(tailImg);
 }
 
 Snake::~Snake() {
     UnloadTexture(head);
+    UnloadTexture(tail);
 }
 
 void Snake::Draw() {
@@ -26,10 +32,7 @@ void Snake::Draw() {
     for (unsigned int i = 1; i < body.size(); i++) {
         float x = body[i].x;
         float y = body[i].y;
-        Rectangle segment = Rectangle{
-            offset + x * cellSize, offset + y * cellSize, (float) cellSize, (float) cellSize
-        };
-        DrawRectangleRounded(segment, 0.5, 6, darkGreen);
+        DrawTexture(tail, offset + x * cellSize, offset + y * cellSize, WHITE);
     }
 }
 
