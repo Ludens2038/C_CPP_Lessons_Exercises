@@ -2,8 +2,8 @@
 #include "header-files/utils.h"
 
 Food::Food(std::deque<Vector2> snakeBody) {
-    Image image = LoadImage("./assets/burger.png");
-    ImageResize(&image, 25, 25);
+    Image image = LoadImage("./assets/bier.png");
+    ImageResize(&image, 40, 40);
     texture = LoadTextureFromImage(image);
     UnloadImage(image);
     position = generateRandomPos(snakeBody);

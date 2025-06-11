@@ -9,6 +9,11 @@ int main() {
     bool pause = false;
     double moveInterval = 0.2;
 
+    InitAudioDevice();
+    Music bgMusic = LoadMusicStream("./assets/gameMusic.mp3");
+    SetMusicVolume(bgMusic, 0.2f);
+    PlayMusicStream(bgMusic);
+
     std::queue<Vector2> directionQueue;
 
     std::cout << "Starting the game" << std::endl;
@@ -20,6 +25,7 @@ int main() {
 
     while (!WindowShouldClose()) {
         BeginDrawing();
+        UpdateMusicStream(bgMusic);
 
         // Pause umschalten
         if (IsKeyPressed(KEY_P)) {
@@ -62,19 +68,23 @@ int main() {
 
             if (IsKeyPressed(KEY_UP) && lastDir.y != 1) {
                 directionQueue.push({0, -1});
-                lastDir = {0, -1}; // letzte Richtung aktualisieren
+                lastDir = {0, -1};
+                game.running = true; // Spiel starten
             }
             if (IsKeyPressed(KEY_DOWN) && lastDir.y != -1) {
                 directionQueue.push({0, 1});
                 lastDir = {0, 1};
+                game.running = true;
             }
             if (IsKeyPressed(KEY_LEFT) && lastDir.x != 1) {
                 directionQueue.push({-1, 0});
                 lastDir = {-1, 0};
+                game.running = true;
             }
             if (IsKeyPressed(KEY_RIGHT) && lastDir.x != -1) {
                 directionQueue.push({1, 0});
                 lastDir = {1, 0};
+                game.running = true;
             }
         }
 
@@ -89,6 +99,8 @@ int main() {
         EndDrawing();
     }
 
+    UnloadMusicStream(bgMusic);
+    CloseAudioDevice();
     CloseWindow();
 
     return 0;

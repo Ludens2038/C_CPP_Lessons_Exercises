@@ -4,7 +4,6 @@
 #include "header-files/utils.h"
 
 Game::Game() : snake(), food(snake.body), running(true), score(0) {
-    InitAudioDevice();
     eatSound = LoadSound("./assets/crunchybite.ogg");
     wallSound = LoadSound("./assets/die1.mp3");
 }
@@ -12,7 +11,7 @@ Game::Game() : snake(), food(snake.body), running(true), score(0) {
 Game::~Game() {
     UnloadSound(eatSound);
     UnloadSound(wallSound);
-    CloseAudioDevice();
+    // CloseAudioDevice();
 }
 
 void Game::Draw() {
