@@ -8,12 +8,12 @@ Snake::Snake() {
     direction = {1, 0};
     addSegment = false;
 
-    Image headImg = LoadImage("./assets/head.png"); // Passe Pfad/Name an!
+    Image headImg = LoadImage("assets/head.png"); // Passe Pfad/Name an!
     ImageResize(&headImg, 40, 40);
     head = LoadTextureFromImage(headImg);
     UnloadImage(headImg);
 
-    Image tailImg = LoadImage("./assets/pfirsich.png");
+    Image tailImg = LoadImage("assets/pfirsich.png");
     ImageResize(&tailImg, 35, 35);
     tail = LoadTextureFromImage(tailImg);
     UnloadImage(tailImg);

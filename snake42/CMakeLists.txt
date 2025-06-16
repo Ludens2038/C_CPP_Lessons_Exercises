@@ -43,4 +43,3 @@ target_include_directories(snake42 PRIVATE ${raylib_INCLUDE_DIRS})
 
 # link all libraries to the project
 target_link_libraries(snake42 PRIVATE ${LIB1})
-

@@ -10,7 +10,7 @@ int main() {
     double moveInterval = 0.2;
 
     InitAudioDevice();
-    Music bgMusic = LoadMusicStream("./assets/gameMusic.mp3");
+    Music bgMusic = LoadMusicStream("assets/gameMusic.mp3");
     SetMusicVolume(bgMusic, 0.2f);
     PlayMusicStream(bgMusic);
 
